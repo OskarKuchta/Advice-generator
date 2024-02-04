@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Manrope", sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 10px;
+  background-color: hsl(218, 23%, 16%);
+}
+
+main {
+  position: relative;
+  height: 100%;
+  width: 90vw;
+  max-width: 400px;
+  background-color: hsl(217, 19%, 24%);
+  margin: -150px auto;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.advice-number {
+  font-size: 0.6rem;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 0.15rem;
+  margin-bottom: 2rem;
+}
+
+.advice-text {
+  font-size: 1.4rem;
+  color: hsl(193, 38%, 86%);
+  margin-bottom: 3.5rem;
+  background-color: transparent;
+  border: transparent;
+}
+
+.dice-circle {
+  position: absolute;
+  right: 42%;
+  width: 55px;
+  height: 55px;
+  background-color: hsl(0, 0%, 100%);
+  border: transparent;
+  outline-color: white;
+  border-radius: 50%;
+  transition: 0.3s background ease-in-out;
+}
+.dice-circle:hover,
+.dice-circle:focus {
+  background-color: hsl(150, 100%, 66%);
+}
+
+.dice-circle {
+  cursor: pointer;
+}
+
+.rotate {
+  transition: 0.55s transform;
+  transform: rotate(450deg);
+}
+
+@media (min-width: 500px) {
+  main {
+    margin: 0;
+  }
+}
